@@ -1,0 +1,19 @@
+{
+  "name": "bongo-vu",
+  "version": "1.0.0",
+  "description": "Bongo Bongus Vo Vu",
+  "main": "index.js",
+  "author": "Davon Barnette",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^6.3.0",
+    "chalk": "^4.1.2",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0",
+    "kuroshiro": "^1.1.2",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0",
+    "moment": "^2.29.1"
+  }
+}
