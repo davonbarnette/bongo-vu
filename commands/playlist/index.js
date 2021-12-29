@@ -3,9 +3,9 @@ const discord = require("./discord");
 const slack = require("./slack");
 
 let params = {
-    name: "translate",
-    aliases: ["tr"],
-    description: "Translates from English to Japanese and vice-versa.",
+    name: "playlist",
+    aliases: ["pl"],
+    description: "Play a playlist",
 }
 
 params.executables = { discord, slack };
