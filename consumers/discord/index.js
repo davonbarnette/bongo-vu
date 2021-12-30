@@ -21,38 +21,6 @@ class DiscordConsumer extends BaseConsumer {
         });
         this.client.commands = commandList;
 
-        this.client.player
-            .on('channelEmpty', (queue) =>
-                Logger.log(`Everyone left the Voice Channel, queue ended.`))
-            // Emitted when a song was added to the queue.
-            .on('songAdd', (queue, song) =>
-                Logger.log(`Song ${song} was added to the queue.`))
-            // Emitted when a playlist was added to the queue.
-            .on('playlistAdd', (queue, playlist) =>
-                Logger.log(`Playlist ${playlist} with ${playlist.songs.length} was added to the queue.`))
-            // Emitted when there was no more music to play.
-            .on('queueDestroyed', (queue) =>
-                Logger.log(`The queue was destroyed.`))
-            // Emitted when the queue was destroyed (either by ending or stopping).
-            .on('queueEnd', (queue) =>
-                Logger.log(`The queue has ended.`))
-            // Emitted when a song changed.
-            .on('songChanged', (queue, newSong, oldSong) =>
-                Logger.log(`${newSong} is now playing.`))
-            // Emitted when a first song in the queue started playing.
-            .on('songFirst', (queue, song) =>
-                Logger.log(`Started playing ${song}.`))
-            // Emitted when someone disconnected the bot from the channel.
-            .on('clientDisconnect', (queue) =>
-                Logger.log(`I was kicked from the Voice Channel, queue ended.`))
-            // Emitted when deafenOnJoin is true and the bot was undeafened
-            .on('clientUndeafen', (queue) =>
-                Logger.log(`I got undefeanded.`))
-            // Emitted when there was an error in runtime
-            .on('error', (error, queue) => {
-                Logger.log(`Error: ${error} in ${queue.guild.name}`);
-            });
-
         Logger.success(`Player set`)
 
         this.client.login(TOKEN);
