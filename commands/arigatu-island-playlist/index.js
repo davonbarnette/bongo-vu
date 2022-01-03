@@ -1,5 +1,6 @@
 const Command = require("../base");
 const discord = require("./discord");
+const slack = require("./slack");
 
 let params = {
     name: "arigatu-island-playlist",
