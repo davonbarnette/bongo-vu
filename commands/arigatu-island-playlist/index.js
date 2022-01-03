@@ -1,5 +1,6 @@
 const Command = require("../base");
 const discord = require("./discord");
+const slack = require("./slack");
 
 let params = {
     name: "arigatu-island-playlist",
@@ -7,6 +8,6 @@ let params = {
     description: "Play the AI's collaborative playlist",
 }
 
-params.executables = { discord };
+params.executables = { discord, slack };
 
 module.exports = new Command(params);
