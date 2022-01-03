@@ -13,6 +13,7 @@ const queue = require("./commands/queue");
 const help = require("./commands/help");
 const nowplaying = require("./commands/nowplaying");
 const shuffle = require("./commands/shuffle");
+const arigatuIslandPlaylist = require("./commands/arigatu-island-playlist");
 
 const {Collection} = require("discord.js");
 
@@ -33,6 +34,7 @@ commandList.set(queue.name, queue)
 commandList.set(help.name, help)
 commandList.set(nowplaying.name, nowplaying)
 commandList.set(shuffle.name, shuffle)
+commandList.set(arigatuIslandPlaylist.name, arigatuIslandPlaylist)
 
 
 module.exports = commandList;
