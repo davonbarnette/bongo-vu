@@ -7,6 +7,6 @@ let params = {
     description: "Play the AI's collaborative playlist",
 }
 
-params.executables = { discord, slack };
+params.executables = { discord };
 
 module.exports = new Command(params);
