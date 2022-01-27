@@ -14,6 +14,8 @@ const help = require("./commands/help");
 const nowplaying = require("./commands/nowplaying");
 const shuffle = require("./commands/shuffle");
 const arigatuIslandPlaylist = require("./commands/arigatu-island-playlist");
+const pee = require("./commands/pee");
+const unwise = require("./commands/unwise");
 
 const {Collection} = require("discord.js");
 
@@ -35,6 +37,8 @@ commandList.set(help.name, help)
 commandList.set(nowplaying.name, nowplaying)
 commandList.set(shuffle.name, shuffle)
 commandList.set(arigatuIslandPlaylist.name, arigatuIslandPlaylist)
+commandList.set(pee.name, pee)
+commandList.set(unwise.name, unwise)
 
 
 module.exports = commandList;
