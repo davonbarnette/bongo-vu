@@ -9,7 +9,7 @@ let params = {
     description: "Spin the wheel, let fate decide",
 }
 
-params.executables = { discord, slack };
+params.executables = { discord };
 
 module.exports = new Command(params);
 
