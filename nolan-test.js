@@ -1,0 +1,3 @@
+function nolanTest(){
+    return "";
+}
