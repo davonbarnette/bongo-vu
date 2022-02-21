@@ -1,3 +1,3 @@
 function buildChair(){
-
+    buildLegs();
 }
