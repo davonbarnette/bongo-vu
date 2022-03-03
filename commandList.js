@@ -17,6 +17,7 @@ const arigatuIslandPlaylist = require("./commands/arigatu-island-playlist");
 const pee = require("./commands/pee");
 const unwise = require("./commands/unwise");
 const wheeloftanner = require("./commands/wheel-of-tanner");
+const animeRelease = require("./commands/anime-release");
 
 const {Collection} = require("discord.js");
 
@@ -41,6 +42,7 @@ commandList.set(arigatuIslandPlaylist.name, arigatuIslandPlaylist)
 commandList.set(pee.name, pee)
 commandList.set(unwise.name, unwise)
 commandList.set(wheeloftanner.name, wheeloftanner)
+commandList.set(animeRelease.name, animeRelease)
 
 
 module.exports = commandList;

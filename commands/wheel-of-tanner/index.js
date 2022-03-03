@@ -1,6 +1,5 @@
 const Command = require("../base");
 const discord = require("./discord");
-const slack = require("./slack");
 
 // Change the name, aliases, and description.
 let params = {
@@ -9,7 +8,7 @@ let params = {
     description: "Spin the wheel, let fate decide",
 }
 
-params.executables = { discord, slack };
+params.executables = { discord };
 
 module.exports = new Command(params);
 
